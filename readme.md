@@ -1,0 +1,1 @@
+Magento 2.4.7-p1 adapted to the Justuno module's testing.
