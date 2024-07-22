@@ -21,6 +21,13 @@
 # https://mage2.pro/t/6339
 # 2) "Adapt the website to Windows": https://github.com/justuno-com/test-2.4.7-p1/issues/1
 !/vendor/magento/framework/View/Element/Template/File/Validator.php
+# 2024-07-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+# 1.1) "How to adapt `Magento\Catalog\Model\View\Asset\Image::getUrl()` to Windows in Magento ≥ 2.4.2?":
+# https://mage2.pro/t/6411
+# 1.2) "How to adapt `Magento\Catalog\Model\View\Asset\Image::getImageInfo()` to Windows in Magento ≥ 2.3.0?":
+# https://mage2.pro/t/6412
+# 2) "Adapt the website to Windows": https://github.com/justuno-com/test-2.4.7-p1/issues/1
+!/vendor/magento/module-catalog/Model/View/Asset/Image.php
 # 2023-07-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
 # Today I noticed that `git add . && git commit -a -m refactoring && git push`
 # started to commit subfolders which are git repositories (for an unknown reason).
