@@ -141,10 +141,8 @@ class Image implements LocalInterface
                 return $this->getUrlWithTransformationParameters();
             case CatalogMediaConfig::HASH:
 				# 2024-07-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
-				# 1.1) "How to adapt `Magento\Catalog\Model\View\Asset\Image::getUrl()` to Windows in Magento ≥ 2.4.2?":
+				# 1) "How to adapt `Magento\Catalog\Model\View\Asset\Image::getUrl()` to Windows in Magento ≥ 2.4.2?":
 				# https://mage2.pro/t/6411
-				# 1.2) "How to adapt `Magento\Catalog\Model\View\Asset\Image::getImageInfo()` to Windows in Magento ≥ 2.3.0?":
-				# https://mage2.pro/t/6412
 				# 2) "Adapt the website to Windows": https://github.com/27estore/site/issues/2
 				# 3) I replaced `DIRECTORY_SEPARATOR` with '/'.
 				# 4) The original code:
