@@ -143,7 +143,7 @@ class Image implements LocalInterface
 				# 2024-07-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
 				# 1) "How to adapt `Magento\Catalog\Model\View\Asset\Image::getUrl()` to Windows in Magento ≥ 2.4.2?":
 				# https://mage2.pro/t/6411
-				# 2) "Adapt the website to Windows": https://github.com/27estore/site/issues/2
+				# 2) "Adapt the website to Windows": https://github.com/justuno-com/test-2.4.7-p1/issues/1
 				# 3) I replaced `DIRECTORY_SEPARATOR` with '/'.
 				# 4) The original code:
 				# https://github.com/magento/magento2/blob/2.4.7-p1/app/code/Magento/Catalog/Model/View/Asset/Image.php#L143
@@ -286,10 +286,13 @@ class Image implements LocalInterface
      */
     private function getImageInfo()
     {
-        $path = $this->getModule()
-            . DIRECTORY_SEPARATOR . $this->getMiscPath()
-            . DIRECTORY_SEPARATOR . $this->getFilePath();
-        return preg_replace('|\Q'. DIRECTORY_SEPARATOR . '\E+|', DIRECTORY_SEPARATOR, $path);
+		# 2024-07-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+		# 1) "How to adapt `Magento\Catalog\Model\View\Asset\Image::getImageInfo()` to Windows in Magento ≥ 2.3.0?":
+		# https://mage2.pro/t/6412
+		# 2) "Adapt the website to Windows": https://github.com/justuno-com/test-2.4.7-p1/issues/1
+		# 5) The original code:
+		# https://github.com/magento/magento2/blob/2.4.7-p1/app/code/Magento/Catalog/Model/View/Asset/Image.php#L282-L285
+        return "{$this->getModule()}/{$this->getMiscPath()}" . $this->getFilePath();
     }
 
     /**
